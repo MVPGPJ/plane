@@ -1,0 +1,209 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+li{
+      list-style: none;
+}
+
+body,html{
+      overflow: hidden;
+}
+/* 主体背景 */
+#main{      
+      height: 714px;
+      width: 400px;
+      background-image: url(../images/bg.jpg);
+      background-size: 100% 100%;
+      line-height: 714px;
+      font-size: 80px;
+      color: #fff;
+      text-align: center;
+}
+/* 选项部分 */
+#options{
+      width: 300px;
+      height: 400px;
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
+}
+#options li{
+      margin: 15px auto;
+      background: skyblue;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #000;
+      padding: 10px;
+      cursor: pointer;
+}   
+#options li:hover{
+      transition: all .5s;
+      color: aquamarine;
+}
+.myWarPlan{
+      width: 98px;
+      height: 122px;
+      background-image: url(../images/me.png);
+      position: absolute;
+      cursor: none;
+}
+.enemy-small{
+      width: 59px;
+      height: 36px;
+      background-image: url(../images/plain1.png);
+      position: absolute;
+}
+.small-die{
+      animation: smallDie 1s ease-in infinite;
+}
+.enemy-middle{
+      width: 70px;
+      height: 92px;
+      background-image: url(../images/plain2.png);
+      position: absolute;
+}
+
+.middle-die{
+      animation: middleDie 1.5s ease-in infinite; 
+}
+.enemy-boss{
+      width: 165px;
+      height: 256px;
+      background-image: url(../images/plain3.png);
+      position: absolute;
+}
+.boss-die{
+      animation: bossDie 3s ease-in infinite;
+}
+
+.bullet{
+      width: 7px;
+      height: 18px;
+      background-image: url(../images/bullet.png);
+      position: absolute;
+}
+
+.bullet-die{
+      margin-left: -16px;
+      margin-top: 10px;
+      background-repeat: no-repeat;
+      animation: bulletDie .5s ease-in infinite;
+}
+
+.me-die{
+
+      animation: meDie 3s ease-in infinite;
+}
+div.logo{
+      width: 328px;
+      height: 79px;
+      background-image: url(../images/logo.png);
+      background-size: 100%;
+      position: absolute;
+      top: -30%;
+}
+.loading{
+      width: 200px;
+      height: 42px;
+      background-image: url(../images/loading1.png);
+      background-repeat: no-repeat;
+      background-size: 200px 42px;
+      /* animation: loading 1s infinite; */
+}
+
+@keyframes loading{
+      0%{
+            background-image: url(../images/loading1.png);
+      }
+      30%{
+            background-image: url(../images/loading2.png);
+      }
+      80%{
+            background-image: url(../images/loading3.png);
+      }
+}
+
+@keyframes bulletDie{
+      0%{
+            width: 40px;
+            height: 42px;
+            background-image: url(../images/die1.png);
+      }
+      100%{
+            width: 40px;
+            height: 42px;
+            background-image: url(../images/die2.png);
+      }
+}
+
+@keyframes meDie{
+      0%{
+            background-image: url(../images/me_die1.png);
+      }
+      33%{
+            background-image: url(../images/me_die2.png);
+      }
+      66%{
+            background-image: url(../images/me_die3.png);
+      }
+      100%{
+            background-image: url(../images/me_die4.png);
+      }
+}
+
+@keyframes smallDie{
+      0%{
+            background-image: url(../images/plain1_die1.png);
+      }
+      50%{
+            background-image: url(../images/plain1_die2.png);
+      }
+      100%{
+            background-image: url(../images/plain1_die3.png);
+      }
+}
+@keyframes middleDie{
+      0%{
+            background-image: url(../images/plain2_die1.png);
+      }
+      33%{
+            background-image: url(../images/plain2_die2.png);
+      }
+      66%{
+            background-image: url(../images/plain2_die3.png);
+      }
+      100%{
+            background-image: url(../images/plain2_die4.png);
+      }
+}
+
+@keyframes bossDie{
+      0%{
+            background-image: url(../images/plain3_die1.png);
+      }
+      20%{
+            background-image: url(../images/plain3_die2.png);
+      }
+      40%{
+            background-image: url(../images/plain3_die3.png);
+      }
+      60%{
+            background-image: url(../images/plain3_die4.png);
+      }
+      80%{
+            background-image: url(../images/plain3_die5.png);
+      }
+      100%{
+            background-image: url(../images/plain3_die6.png);
+      }
+}
+
+
+.center{
+      position: absolute;
+      margin:auto;
+      left: 0;
+      top:0;
+      right: 0;
+      bottom: 0;
+}
